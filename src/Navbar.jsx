@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionContainer from "./components/SectionContainer/SectionContainer";
 import { BsTelephonePlus } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import navlogo from "../public/assets/logo.webp";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
+  const [category, setCategory] = useState("All Categories");
   return (
     <div>
       {/* top navbar start */}
@@ -37,6 +40,36 @@ const Navbar = () => {
         </SectionContainer>
       </div>
       {/* top navbar end */}
+
+      {/* middel nav section start */}
+      <SectionContainer>
+        <img src={navlogo} alt="navlogo" />
+        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden w-full max-w-md">
+          <input
+            type="text"
+            placeholder="Search Product..."
+            className="py-2 px-3 w-full outline-none"
+          />
+
+          {/* Select Dropdown */}
+          <select
+            className="py-2 px-3 bg-white text-gray-600 border-l border-gray-300 cursor-pointer"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option>All Categories</option>
+            <option>Vegetable</option>
+            <option>Fruits</option>
+            <option>Juice</option>
+            <option>Meat</option>
+          </select>
+
+          <button className="bg-[#34A853] py-[10px] px-3 text-white rounded-r-md">
+            Scarch
+          </button>
+        </div>
+      </SectionContainer>
+      {/* middel nav section end */}
     </div>
   );
 };
