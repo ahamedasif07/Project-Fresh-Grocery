@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
 import logoImage from "../../../public/assets/logo.webp";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { RxCross2 } from "react-icons/rx";
 
 const MiniDeviceNav = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <div>
       <SectionContainer>
         <div className="flex justify-between place-items-center  py-2 ">
-          <h2>
-            <HiMenuAlt2 />
-          </h2>
+          {isMenuOpen ? (
+            <h2
+              onClick={() => setMenuOpen(!isMenuOpen)}
+              className="text-[18px]"
+            >
+              <RxCross2 />
+            </h2>
+          ) : (
+            <h2
+              onClick={() => setMenuOpen(!isMenuOpen)}
+              className="text-[18px]"
+            >
+              <HiMenuAlt2 />
+            </h2>
+          )}
           <img src={logoImage}></img>
           <h4 className="text-[22px] relative text-gray-800 ">
             <HiOutlineShoppingBag />
