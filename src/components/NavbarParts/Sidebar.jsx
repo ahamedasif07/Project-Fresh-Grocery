@@ -58,14 +58,17 @@ const Sidebar = ({ setMenuOpen }) => {
       {/* Nav Items */}
       <nav className="flex-1 overflow-y-scroll px-2 space-y-2 py-4">
         {[
-          "Dashboard",
-          "Profile",
-          "Settings",
-          "Messages",
-          "Dashboard",
-          "Profile",
-          "Settings",
-          "Messages",
+          "Vegetable",
+          "Fruits",
+          "Juice",
+          "Meat",
+          "Smoothie",
+          "Bread",
+          "Sea Foods",
+          "Pet Foods",
+          "Milk & Drinks",
+          "Drinks",
+          "Protein",
         ].map((item, index) => (
           <div
             key={index}
@@ -73,7 +76,7 @@ const Sidebar = ({ setMenuOpen }) => {
           >
             <span className="text-lg">📌</span>
             <span
-              className={`transition-opacity duration-100 ${
+              className={`transition-opacity font-semibold duration-100 ${
                 isExpanded ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
