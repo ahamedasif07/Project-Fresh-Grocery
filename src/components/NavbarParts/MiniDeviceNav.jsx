@@ -37,7 +37,9 @@ const MiniDeviceNav = () => {
           </h4>
         </div>
       </SectionContainer>
-      {isMenuOpen && <Sidebar />}
+      {isMenuOpen && (
+        <Sidebar setMenuOpen={setMenuOpen} isMenuOpen={isMenuOpen} />
+      )}
     </div>
   );
 };

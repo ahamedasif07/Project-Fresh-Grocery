@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { BsArrowRepeat } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import { IoSearch } from "react-icons/io5";
 
-const Sidebar = () => {
+const Sidebar = ({ setMenuOpen }) => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isFooterExpanded, setIsFooterExpanded] = useState(false);
 
@@ -31,11 +33,27 @@ const Sidebar = () => {
         </div>
         <button
           className="absolute right-4 p-2 bg-[#34A853] text-gray-200 rounded-full"
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={() => setMenuOpen(false)}
         >
           <RxCross2 />
         </button>
       </div>
+
+      {/* Scarch filde start */}
+      <div className="px-4 mx-auto flex place-items-center  ">
+        <input
+          className="outline-0 border-[2px] px-1 border-gray-400 py-[5px]"
+          type="scarch"
+          placeholder="scarch"
+        />
+        <button
+          className="px-1 rounded-r-md py-2 bg-[#34A853] text-white text-[22px] "
+          type="button"
+        >
+          <IoSearch />
+        </button>
+      </div>
+      {/* Scarch filde end */}
 
       {/* Nav Items */}
       <nav className="flex-1 overflow-y-scroll px-2 space-y-2 py-4">
