@@ -5,6 +5,8 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 
+import Sidebar from "./Sidebar";
+
 const MiniDeviceNav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
@@ -35,6 +37,7 @@ const MiniDeviceNav = () => {
           </h4>
         </div>
       </SectionContainer>
+      {isMenuOpen && <Sidebar />}
     </div>
   );
 };
