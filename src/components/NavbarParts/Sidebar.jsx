@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { BsArrowRepeat } from "react-icons/bs";
+import { MdFavoriteBorder } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -12,18 +15,25 @@ const Sidebar = () => {
     >
       {/* Header */}
       <div className="relative w-full min-h-20  flex items-center px-4 transition-all duration-200">
-        <h1
-          className={`text-xl transition-opacity duration-100 ${
-            isExpanded ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          Sidebar
-        </h1>
+        <div className="flex place-items-center gap-4">
+          <h4 className="text-[24px] relative text-gray-800 ">
+            <BsArrowRepeat />
+            <p className="bg-green-600 absolute bottom-[13px] left-[12px] inline-block text-[10px] text-white rounded-full px-[4px] ">
+              0
+            </p>
+          </h4>
+          <h4 className="text-[24px] relative text-gray-800 ">
+            <MdFavoriteBorder />
+            <p className="bg-green-600 absolute bottom-[13px] left-[12px] inline-block text-[10px] text-white rounded-full px-[4px] ">
+              0
+            </p>
+          </h4>
+        </div>
         <button
-          className="absolute right-4 p-2 bg-[#f5f6fa] rounded-md"
+          className="absolute right-4 p-2 bg-[#34A853] text-gray-200 rounded-full"
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          ☰
+          <RxCross2 />
         </button>
       </div>
 
