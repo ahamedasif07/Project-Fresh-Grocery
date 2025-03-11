@@ -4,10 +4,50 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import { IoSearch } from "react-icons/io5";
+import {
+  FaCarrot,
+  FaAppleAlt,
+  FaCocktail,
+  FaDrumstickBite,
+  FaBreadSlice,
+  FaFish,
+  FaDog,
+  FaTint,
+  FaBeer,
+  FaDumbbell,
+} from "react-icons/fa";
+import {
+  FaAnchor,
+  FaGamepad,
+  FaBicycle,
+  FaAndroid,
+  FaCircleNotch,
+} from "react-icons/fa";
+
+import {
+  IoPhonePortrait,
+  IoHome,
+  IoBasketball,
+  IoSettings,
+  IoMan,
+} from "react-icons/io5";
 
 const Sidebar = ({ setMenuOpen }) => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isFooterExpanded, setIsFooterExpanded] = useState(false);
+  const menuItems = [
+    { id: 1, name: "Vegetable", icon: <FaCarrot /> },
+    { id: 2, name: "Fruits", icon: <FaAppleAlt /> },
+    { id: 3, name: "Juice", icon: <FaCocktail /> },
+    { id: 4, name: "Meat", icon: <FaDrumstickBite /> },
+    { id: 5, name: "Smoothie", icon: <FaCocktail /> },
+    { id: 6, name: "Bread", icon: <FaBreadSlice /> },
+    { id: 7, name: "Sea Foods", icon: <FaFish /> },
+    { id: 8, name: "Pet Foods", icon: <FaDog /> },
+    { id: 9, name: "Milk & Drinks", icon: <FaTint /> },
+    { id: 10, name: "Drinks", icon: <FaBeer /> },
+    { id: 11, name: "Protein", icon: <FaDumbbell /> },
+  ];
 
   return (
     <div
@@ -57,31 +97,21 @@ const Sidebar = ({ setMenuOpen }) => {
 
       {/* Nav Items */}
       <nav className="flex-1 overflow-y-scroll px-2 space-y-2 py-4">
-        {[
-          "Vegetable",
-          "Fruits",
-          "Juice",
-          "Meat",
-          "Smoothie",
-          "Bread",
-          "Sea Foods",
-          "Pet Foods",
-          "Milk & Drinks",
-          "Drinks",
-          "Protein",
-        ].map((item, index) => (
+        {menuItems.map((item, index) => (
           <div
             key={index}
             className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[#2c3e50] transition-all"
           >
-            <span className="text-lg">📌</span>
-            <span
-              className={`transition-opacity font-semibold duration-100 ${
-                isExpanded ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
-            >
-              {item}
-            </span>
+            <div className="flex gap-8 place-items-center-center">
+              <span className="text-[20px]">{item.icon}</span>
+              <span
+                className={`transition-opacity font-semibold duration-100 ${
+                  isExpanded ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}
+              >
+                {item.name}
+              </span>
+            </div>
           </div>
         ))}
       </nav>

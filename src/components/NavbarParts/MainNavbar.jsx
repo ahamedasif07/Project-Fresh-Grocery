@@ -12,7 +12,7 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 const MainNav = () => {
   const [category, setCategory] = useState("All Categories");
   return (
-    <div>
+    <div className="py-2">
       {/* middel nav section start */}
       <SectionContainer>
         <div className="flex justify-between place-items-center">
@@ -37,7 +37,7 @@ const MainNav = () => {
               <option>Meat</option>
             </select>
 
-            <button className="bg-[#34A853] py-[10px] px-3 text-white rounded-r-md">
+            <button className="bg-[#34A853] hover:bg-green-600 py-[10px] px-3 text-white rounded-r-md">
               Scarch
             </button>
           </div>
