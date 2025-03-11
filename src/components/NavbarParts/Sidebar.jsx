@@ -82,7 +82,7 @@ const Sidebar = ({ setMenuOpen }) => {
       {/* Scarch filde start */}
       <div className="px-4 mx-auto flex place-items-center  ">
         <input
-          className="outline-0 border-[2px] px-1 border-gray-400 py-[5px]"
+          className="outline-0 border-[0.5px] px-1 border-green-200 py-[6px]"
           type="scarch"
           placeholder="scarch"
         />
@@ -117,7 +117,7 @@ const Sidebar = ({ setMenuOpen }) => {
       </nav>
 
       {/* Footer */}
-      <div
+      {/* <div
         className={`relative w-full h-14  flex items-center transition-all duration-200 ${
           isFooterExpanded ? "h-24" : "h-14"
         }`}
@@ -133,13 +133,8 @@ const Sidebar = ({ setMenuOpen }) => {
             <p className="text-xs text-gray-400">@username</p>
           </div>
         </div>
-        <button
-          className="absolute right-4 p-2 text-gray-400 hover:text-white transition"
-          onClick={() => setIsFooterExpanded(!isFooterExpanded)}
-        >
-          ⌄
-        </button>
-      </div>
+        
+      </div> */}
     </div>
   );
 };
