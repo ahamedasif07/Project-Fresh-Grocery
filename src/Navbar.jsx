@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="block md:hidden">
         <MiniDeviceNav />
       </div>
-      <div>
+      <div className="hidden md:block">
         <BottomNav />
       </div>
     </div>
