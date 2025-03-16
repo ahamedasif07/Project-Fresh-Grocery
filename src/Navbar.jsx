@@ -1,3 +1,4 @@
+import BottomNav from "./components/NavbarParts/BottomNav";
 import MainNav from "./components/NavbarParts/MainNavbar";
 import MiniDeviceNav from "./components/NavbarParts/MiniDeviceNav";
 import TopNav from "./components/NavbarParts/TopNav";
@@ -11,6 +12,9 @@ const Navbar = () => {
       </div>
       <div className="block md:hidden">
         <MiniDeviceNav />
+      </div>
+      <div>
+        <BottomNav />
       </div>
     </div>
   );
