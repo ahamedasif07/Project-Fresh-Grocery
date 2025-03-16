@@ -22,7 +22,7 @@ const BottomNav = () => {
     <div>
       <div className="bg-[#34A853] py-3 mt-4">
         <SectionContainer>
-          <div>
+          <div className="flex place-items-center justify-between">
             <div className="flex place-items-center gap-[55px]">
               {/* drop dowen start */}
               <div className="relative w-64">
@@ -88,7 +88,7 @@ const BottomNav = () => {
             </div>
             {/* button start */}
             <div>
-              <button className="relative overflow-hidden px-[30px] py-[10px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
+              <button className="relative overflow-hidden px-[30px] py-[13px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
                 <span className="absolute inset-0 w-0 h-full  group-hover:bg-black group-hover:w-full transition-all duration-500 ease-out"></span>
                 <span className="relative">Seller Login</span>
               </button>
