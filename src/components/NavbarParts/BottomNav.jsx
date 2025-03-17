@@ -90,7 +90,9 @@ const BottomNav = () => {
             <div>
               <button className="relative overflow-hidden px-[30px] py-[13px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
                 <span className="absolute inset-0 w-0 h-full  group-hover:bg-black group-hover:w-full transition-all duration-500 ease-out"></span>
-                <span className="relative">Seller Login</span>
+                <span className="relative text-black group-hover:text-white">
+                  Seller Login
+                </span>
               </button>
             </div>
             {/* button end */}

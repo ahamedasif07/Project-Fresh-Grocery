@@ -12,7 +12,7 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 const MainNav = () => {
   const [category, setCategory] = useState("All Categories");
   return (
-    <div className="py-2">
+    <div className="py-2 mt-[14px]">
       {/* middel nav section start */}
       <SectionContainer>
         <div className="flex justify-between place-items-center">
@@ -26,15 +26,25 @@ const MainNav = () => {
 
             {/* Select Dropdown */}
             <select
-              className="py-2 px-3 bg-white text-gray-600 border-l border-gray-300 cursor-pointer"
+              className="w-[250px] bg-white border-l  text-black  py-2 px-3  border-gray-300 cursor-pointer"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option>All Categories</option>
-              <option>Vegetable</option>
-              <option>Fruits</option>
-              <option>Juice</option>
-              <option>Meat</option>
+              <option className="" value="all">
+                All Categories
+              </option>
+              <option className="" value="vegetable">
+                Vegetable
+              </option>
+              <option className="" value="fruits">
+                Fruits
+              </option>
+              <option className="" value="juice">
+                Juice
+              </option>
+              <option className="" value="meat">
+                Meat
+              </option>
             </select>
 
             <button className="bg-[#34A853] hover:bg-green-600 py-[10px] px-3 text-white rounded-r-md">
