@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <div>
       <TopNav />
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <MainNav />
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <MiniDeviceNav />
       </div>
       <div className="hidden lg:block">

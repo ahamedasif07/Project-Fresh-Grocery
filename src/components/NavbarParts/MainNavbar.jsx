@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { BsTelephonePlus } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
 import navlogo from "../../../public/assets/logo.webp";
 import { BsArrowRepeat } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
