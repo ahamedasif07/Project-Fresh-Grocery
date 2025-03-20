@@ -1,11 +1,21 @@
 import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
-const PrimaryButton = () => {
+const PrimaryButton = ({ text, colour, hoverColour }) => {
   return (
     <div>
-      <button className="relative overflow-hidden px-6 py-2 font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
-        <span className="absolute inset-0 w-0 h-full  group-hover:bg-black group-hover:w-full transition-all duration-500 ease-out"></span>
-        <span className="relative">Hover Me</span>
+      <button
+        className={`relative overflow-hidden px-6 py-3 font-semibold bg-${colour} text-white border-transparent rounded-md group`}
+      >
+        <span
+          className={`absolute inset-0 w-0 h-full group-hover:bg-${hoverColour} group-hover:w-full transition-all duration-500 ease-out`}
+        ></span>
+        <div className="flex gap-2 place-items-center relative z-10">
+          <span className="relative">{text}</span>
+          <span className="relative z-10 group-hover:text-white transition-colors duration-500">
+            <IoIosArrowForward />
+          </span>
+        </div>
       </button>
     </div>
   );

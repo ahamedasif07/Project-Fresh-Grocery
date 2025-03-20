@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import heroImgOne from "../../../public/assets/hero-img-1.webp";
 import heroImgTwo from "../../../public/assets/hero-img-2.webp";
 import heroImgTheree from "../../../public/assets/hero-img-3.webp";
+import PrimaryButton from "../PrymaryButton/PrimaryButton";
 
 const CarouselSlider = () => {
   const settings = {
@@ -68,9 +69,11 @@ const CarouselSlider = () => {
             <h2 className=" text-3xl md:text-4xl lg:text-6xl  font-extrabold my-2 leading-[1.5] -tracking-wide">
               You Can Buy All The Grocery Items HassleFree
             </h2>
-            <button className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-              Shop Now
-            </button>
+            <PrimaryButton
+              text="Shop Now"
+              colour="[#FFBB38]"
+              hoverColour="black"
+            ></PrimaryButton>
           </div>
           <div className="md:w-1/2  flex justify-center place-content-center place-items-center">
             <div className="max-h-[450px]  overflow-hidden mx-auto max-w-[450px]">
