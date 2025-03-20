@@ -30,9 +30,11 @@ const CarouselSlider = () => {
             <h2 className=" text-3xl md:text-4xl lg:text-6xl  font-extrabold my-2 leading-[1.5] -tracking-wide">
               There's you can Buy your all of Grocery Products.
             </h2>
-            <button className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-              Shop Now
-            </button>
+            <PrimaryButton
+              text="Shop Now"
+              colour="[#FFBB38]"
+              hoverColour="black"
+            ></PrimaryButton>
           </div>
           <div className="md:w-1/2 mx-auto  flex justify-center place-content-center place-items-center">
             <div className="h-[450px]  mx-auto w-[450px]">
@@ -50,9 +52,11 @@ const CarouselSlider = () => {
             <h2 className=" text-3xl md:text-4xl lg:text-6xl  font-extrabold my-2 leading-[1.5] -tracking-wide">
               We Provide Fresh And Organic Food to Your Door.
             </h2>
-            <button className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-              Shop Now
-            </button>
+            <PrimaryButton
+              text="Shop Now"
+              colour="[#FFBB38]"
+              hoverColour="black"
+            ></PrimaryButton>
           </div>
           <div className="md:w-1/2 flex  justify-center place-content-center place-items-center">
             <div className="max-h-[450px] mx-auto max-w-[450px]">
