@@ -20,10 +20,10 @@ const CarouselSlider = () => {
 
   return (
     <div>
-      <div className="py-10 relative z-0">
+      <div className="py-10 relative z-[-1]">
         {" "}
         {/* Lower z-index */}
-        <Slider {...settings} className="relative z-">
+        <Slider {...settings} className="relative z-0">
           <div className="!flex flex-col-reverse md:flex-row p-6 place-items-center w-full">
             <div className="md:w-1/2 text-center md:text-left">
               <h3 className="text-green-600 text-[30px] font-semibold">

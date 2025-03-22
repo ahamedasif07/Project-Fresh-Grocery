@@ -10,7 +10,7 @@ const MainNav = () => {
   const [category, setCategory] = useState("all");
 
   return (
-    <div className="py-2 mt-[14px] relative z-[50]">
+    <div className="py-2 mt-[14px] relative z-[10000]">
       <SectionContainer>
         <div className="flex justify-between items-center relative">
           {/* Logo */}
@@ -27,7 +27,7 @@ const MainNav = () => {
             {/* Dropdown Wrapper */}
             <div className="relative w-[250px]">
               <select
-                className="w-full bg-white border-l text-black py-2 px-3 border-gray-300 cursor-pointer relative z-[50] shadow-lg"
+                className="w-full bg-white border-l text-black py-2 px-3 border-gray-300 cursor-pointer relative z-[10000] shadow-lg"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >
