@@ -56,7 +56,9 @@ const MarketCategory = () => {
                 <div className="bg-[#F3FAF5] border-transparent hover:border-[1px] transition-all duration-300 ease-in-out  hover:border-green-600 h-[200px] w-[200px] flex justify-center items-center rounded-xl">
                   <img src={category.image}></img>
                 </div>
-                <p>{category.name}</p>
+                <p className="text-[20px] text-gray-600 font-semibold text-center mt-[15px]">
+                  {category.name}
+                </p>
               </div>
             </div>
           ))}
