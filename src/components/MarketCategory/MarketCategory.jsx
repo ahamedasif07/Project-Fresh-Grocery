@@ -39,27 +39,32 @@ const MarketCategory = () => {
     <div>
       <SectionContainer>
         {/* titel */}
-        <div className="flex place-items-center justify-between">
+        <div className="flex overflow-hidden items-center justify-between">
           <h2 className="text-[28px] text-black font-semibold">
             Market Categorys
           </h2>
           <div className="group">
             <h2 className="text-[16px] text-black font-semibold">View All</h2>
-            <p className="h-[2px] w-0 group-hover:w-[65px] transition-all duration-300 ease-in-out bg-black"></p>
+            <p className="h-[2px] w-[65px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out bg-black origin-left"></p>
           </div>
         </div>
+
         {/* catagory images */}
         <div className="flex flex-wrap items-center justify-around mt-[40px]">
-          {categories.map((category) => (
+          {categories.map((category, index) => (
             <div key={category.id}>
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay={`${index * 100}`}
+                data-aos-duration="200"
+              >
                 <div className="bg-[#F3FAF5] group border-transparent hover:border-[1px] transition-all duration-300 ease-in-out  hover:border-green-600 h-[200px] w-[200px] flex justify-center items-center rounded-xl">
                   <img
                     className="group-hover:scale-110 duration-300 ease-in-out"
                     src={category.image}
                   ></img>
                 </div>
-                <p className="text-[18px] text-gray-600 font-semibold text-center mt-[15px]">
+                <p className="text-[18px] text-gray-600 font-semibold text-center mt-[13px] pb-[4px]">
                   {category.name}
                 </p>
               </div>
