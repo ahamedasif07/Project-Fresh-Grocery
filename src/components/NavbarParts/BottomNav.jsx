@@ -44,7 +44,7 @@ const BottomNav = () => {
 
                 {/* Dropdown Menu */}
                 <div
-                  className={`absolute left-0 w-full bg-white shadow-md overflow-hidden transition-all duration-500 ease-in-out ${
+                  className={`absolute z-[1000] left-0 w-full bg-white shadow-md overflow-hidden transition-all duration-500 ease-in-out ${
                     isOpen
                       ? "max-h-[500px] opacity-100 py-2"
                       : "max-h-0 opacity-0 py-0"
@@ -67,7 +67,7 @@ const BottomNav = () => {
               {/* drop dowen end */}
 
               {/* munu item start */}
-              <div>
+              <div className="px-2">
                 <ul className="flex justify-center space-x-6 text-white font-semibold">
                   {[
                     "Home",
@@ -88,7 +88,7 @@ const BottomNav = () => {
             </div>
             {/* button start */}
             <div>
-              <button className="relative overflow-hidden px-[30px] py-[13px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
+              <button className="relative overflow-hidden px-[20px] py-[13px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
                 <span className="absolute inset-0 w-0 h-full  group-hover:bg-black group-hover:w-full transition-all duration-500 ease-out"></span>
                 <span className="relative text-black group-hover:text-white">
                   Seller Login
