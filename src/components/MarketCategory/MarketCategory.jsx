@@ -1,6 +1,7 @@
 import React from "react";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import PrimaryButton from "../PrymaryButton/PrimaryButton";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const MarketCategory = () => {
   const categories = [
@@ -40,18 +41,10 @@ const MarketCategory = () => {
     <div>
       <SectionContainer>
         {/* titel */}
-        <div className="flex overflow-hidden items-center justify-between">
-          <h2 className="text-[28px] text-black font-semibold">
-            Market Categorys
-          </h2>
-          <div className="group">
-            <h2 className="text-[16px] text-black font-semibold">View All</h2>
-            <p className="h-[2px] w-[65px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out bg-black origin-left"></p>
-          </div>
-        </div>
+        <SectionTitle title="Market Category"></SectionTitle>
 
         {/* catagory images */}
-        <div className="flex flex-wrap items-center justify-around mt-[40px]">
+        <div className="flex flex-wrap items-center justify-between mt-[40px]">
           {categories.map((category, index) => (
             <div key={category.id}>
               <div
