@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
       <TopNav />
-      <div className="hidden lg:block">
+      <div className="hidden  lg:block">
         <MainNav />
       </div>
       <div className="block lg:hidden">

@@ -1,5 +1,6 @@
 import React from "react";
 import SectionContainer from "../SectionContainer/SectionContainer";
+import PrimaryButton from "../PrymaryButton/PrimaryButton";
 
 const MarketCategory = () => {
   const categories = [

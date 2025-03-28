@@ -12,7 +12,7 @@ const Home = () => {
         className="h-full opacity-100 w-full bg-cover bg-center"
         style={{ backgroundImage: `url('/assets/new-arrival-bg.webp')` }}
       >
-        <div className="z-10 relative">
+        <div>
           <CarouselSlider />
         </div>
       </div>

@@ -11,13 +11,15 @@ const MainNav = () => {
 
   return (
     <div className="py-2 mt-[14px] relative z-[10000]">
+      {" "}
+      {/* Ensures navbar is always on top */}
       <SectionContainer>
-        <div className="flex justify-between items-center relative">
+        <div className="flex justify-between items-center relative z-[10000]">
           {/* Logo */}
           <img src={navlogo} alt="navlogo" />
 
           {/* Search Bar and Dropdown */}
-          <div className="flex items-center border border-gray-300 rounded-md w-full max-w-md relative">
+          <div className="flex items-center border border-gray-300 rounded-md w-full max-w-md relative overflow-visible z-[10000]">
             <input
               type="text"
               placeholder="Search Product..."
@@ -25,9 +27,9 @@ const MainNav = () => {
             />
 
             {/* Dropdown Wrapper */}
-            <div className="relative w-[250px]">
+            <div className="relative w-[250px] ">
               <select
-                className="w-full bg-white border-l text-black py-2 px-3 border-gray-300 cursor-pointer relative z-[10000] shadow-lg"
+                className="w-full bg-white border-l text-black py-2 px-3 border-gray-300 cursor-pointer  absolute z-[10010] bottom-[-18px]" // Ensures dropdown stays on top
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >

@@ -20,18 +20,19 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div>
+    <div className="relative z-0">
+      {" "}
+      {/* Ensures slider is below the navbar */}
       <SectionContainer>
-        <div className="py-10 relative z-[-1]">
-          {" "}
-          {/* Lower z-index */}
-          <Slider {...settings} className="relative z-0">
+        <div className="py-10 relative !z-0">
+          <Slider {...settings} className="relative !z-[-1]">
+            {/* Slide 1 */}
             <div className="!flex flex-col-reverse md:flex-row p-6 place-items-center w-full">
               <div className="md:w-1/2 text-center md:text-left">
                 <h3 className="text-green-600 text-[30px] font-semibold">
                   FRESH GROCERY
                 </h3>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5] -tracking-wide">
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5]">
                   There's you can Buy your all of Grocery Products.
                 </h2>
                 <PrimaryButton
@@ -41,9 +42,7 @@ const CarouselSlider = () => {
                 />
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <div className="h-[450px] w-[450px]">
-                  <img src={heroImgOne} alt="Grocery" className="" />
-                </div>
+                <img src={heroImgOne} alt="Grocery" className="max-h-[450px]" />
               </div>
             </div>
 
@@ -53,7 +52,7 @@ const CarouselSlider = () => {
                 <h3 className="text-green-600 text-[30px] font-semibold">
                   HEALTHY FOODS
                 </h3>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5] -tracking-wide">
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5]">
                   We Provide Fresh And Organic Food to Your Door.
                 </h2>
                 <PrimaryButton
@@ -63,13 +62,7 @@ const CarouselSlider = () => {
                 />
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <div className="max-h-[450px] mx-auto max-w-[450px]">
-                  <img
-                    src={heroImgTwo}
-                    alt="Grocery"
-                    className="w-full h-auto"
-                  />
-                </div>
+                <img src={heroImgTwo} alt="Grocery" className="max-h-[450px]" />
               </div>
             </div>
 
@@ -79,7 +72,7 @@ const CarouselSlider = () => {
                 <h3 className="text-green-600 text-[30px] font-semibold">
                   HEALTHY FOODS
                 </h3>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5] -tracking-wide">
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold my-2 leading-[1.5]">
                   You Can Buy All The Grocery Items Hassle-Free.
                 </h2>
                 <PrimaryButton
@@ -89,13 +82,11 @@ const CarouselSlider = () => {
                 />
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <div className="max-h-[450px] mx-auto max-w-[450px]">
-                  <img
-                    src={heroImgTheree}
-                    alt="Grocery"
-                    className="w-full h-auto"
-                  />
-                </div>
+                <img
+                  src={heroImgTheree}
+                  alt="Grocery"
+                  className="max-h-[450px]"
+                />
               </div>
             </div>
           </Slider>
