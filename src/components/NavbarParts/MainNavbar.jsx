@@ -27,17 +27,27 @@ const MainNav = () => {
             />
 
             {/* Dropdown Wrapper */}
-            <div className="relative w-[250px] ">
+            <div className="relative w-[450px] ">
               <select
-                className="w-full bg-white border-l text-black py-2 px-3 border-gray-300 cursor-pointer  absolute z-[10010] bottom-[-18px]" // Ensures dropdown stays on top
+                className="w-full bg-white border-l focus:outline-none focus:ring-0  text-gray-400 py-2 px-3 border-gray-300 cursor-pointer  absolute z-[10010] bottom-[-18px]" // Ensures dropdown stays on top
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >
-                <option value="all">All Categories</option>
-                <option value="vegetable">Vegetable</option>
-                <option value="fruits">Fruits</option>
-                <option value="juice">Juice</option>
-                <option value="meat">Meat</option>
+                <option className="text-gray-400" value="all">
+                  All Categories
+                </option>
+                <option className="text-gray-400" value="vegetable">
+                  Vegetable
+                </option>
+                <option className="text-gray-400" value="fruits">
+                  Fruits
+                </option>
+                <option className="text-gray-400" value="juice">
+                  Juice
+                </option>
+                <option className="text-gray-400" value="meat">
+                  Meat
+                </option>
               </select>
             </div>
 
