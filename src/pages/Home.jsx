@@ -4,6 +4,7 @@ import SectionContainer from "../components/SectionContainer/SectionContainer";
 import FeaturesSection from "../components/FetureSections/FetureSection";
 import bgImage from "../../public/assets/new-arrival-bg.webp";
 import MarketCategory from "../components/MarketCategory/MarketCategory";
+import MainCategory from "../components/MainCategory/MainCategory";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <FeaturesSection />
 
       <MarketCategory />
+      <MainCategory />
     </div>
   );
 };

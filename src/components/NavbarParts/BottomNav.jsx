@@ -88,7 +88,7 @@ const BottomNav = () => {
             </div>
             {/* button start */}
             <div>
-              <button className="relative overflow-hidden px-[20px] py-[13px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
+              <button className="relative overflow-hidden px-[28px] py-[12px] font-semibold text-white bg-[#FFBB38] border-transparent rounded-md group">
                 <span className="absolute inset-0 w-0 h-full  group-hover:bg-black group-hover:w-full transition-all duration-500 ease-out"></span>
                 <span className="relative text-black group-hover:text-white">
                   Seller Login

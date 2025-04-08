@@ -65,6 +65,10 @@ const MarketCategory = () => {
             </div>
           ))}
         </div>
+        {/* market msin 3 categoty */}
+        <div>
+          <div></div>
+        </div>
       </SectionContainer>
     </div>
   );
