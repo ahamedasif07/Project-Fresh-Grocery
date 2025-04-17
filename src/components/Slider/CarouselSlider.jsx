@@ -37,7 +37,7 @@ const CarouselSlider = () => {
                 </h2>
                 <PrimaryButton
                   text="Shop Now"
-                  colour="[#FFBB38]"
+                  colour="#FFBB38"
                   hoverColour="black"
                 />
               </div>
@@ -57,7 +57,7 @@ const CarouselSlider = () => {
                 </h2>
                 <PrimaryButton
                   text="Shop Now"
-                  colour="[#FFBB38]"
+                  colour="#FFBB38"
                   hoverColour="black"
                 />
               </div>
@@ -77,7 +77,7 @@ const CarouselSlider = () => {
                 </h2>
                 <PrimaryButton
                   text="Shop Now"
-                  colour="[#FFBB38]"
+                  colour="#FFBB38"
                   hoverColour="black"
                 />
               </div>
