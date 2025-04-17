@@ -13,7 +13,7 @@ const MainLayOut = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <Outlet />
     </div>

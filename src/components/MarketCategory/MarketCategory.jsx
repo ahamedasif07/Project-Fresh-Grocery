@@ -44,7 +44,7 @@ const MarketCategory = () => {
         <SectionTitle title="Market Category"></SectionTitle>
 
         {/* catagory images */}
-        <div className="flex flex-wrap items-center justify-between mt-[40px]">
+        <div className="flex flex-wrap justify-center gap-5 md:justify-between mt-[40px]">
           {categories.map((category, index) => (
             <div key={category.id}>
               <div

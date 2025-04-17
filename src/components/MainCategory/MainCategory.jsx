@@ -12,15 +12,16 @@ const MainCategory = () => {
   return (
     <div>
       <SectionContainer>
-        <div className="flex justify-between md:flex-row flex-col gap-4 mx-auto my-[30px]  rounded-md">
+        <div className="flex justify-between md:flex-row flex-col gap-4 mx-auto my-[30px] rounded-md">
           {/* image one */}
-          <div className="relative  overflow-hidden max-w-[400px] max-h-[500px] ">
-            <img className="" src={mainCategoryOne}></img>
-
-            <div className="absolute bottom-1 overflow-hidden">
-              <div className=" space-y-[-35px]">
-                <div className="  p-4 space-y-[14px]  ">
-                  <h4 className="text-[15px]  mt-[30px] font-semibold">
+          <div
+            className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
+            style={{ backgroundImage: `url(${mainCategoryOne})` }}
+          >
+            <div className=" overflow-hidden">
+              <div className="space-y-[-7px] sm:space-y-[-20px] md:space-y-[-35px]">
+                <div className="p-4 space-y-[14px]">
+                  <h4 className="text-[15px] mt-[30px] font-semibold">
                     FRUITS
                   </h4>
                   <h3 className="text-3xl font-bold">
@@ -30,22 +31,28 @@ const MainCategory = () => {
                     text="Shop Now"
                     colour="#34A853"
                     hoverColour="black"
-                  ></PrimaryButton>
+                  />
                 </div>
-                <img src={mainCategoryItemOne}></img>
+                <img src={mainCategoryItemOne} alt="Item One" />
               </div>
             </div>
           </div>
-          {/* image tow */}
-          <div className="relative  overflow-hidden max-w-[400px] max-h-[500px] ">
-            <img className="" src={mainCategoryTow}></img>
 
-            <img className="absolute top-1" src={mainCategoryItemTwo}></img>
+          {/* image two */}
+          <div
+            className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
+            style={{ backgroundImage: `url(${mainCategoryTow})` }}
+          >
+            <img
+              className="absolute top-1"
+              src={mainCategoryItemTwo}
+              alt="Item Two"
+            />
 
             <div className="absolute bottom-[15px] overflow-hidden">
-              <div className=" space-y-[-35px]">
-                <div className="  p-4 space-y-[14px]  ">
-                  <h4 className="text-[15px]  mt-[30px] font-semibold">
+              <div className="space-y-[-7px] sm:space-y-[-20px] md:space-y-[-35px]">
+                <div className="p-4 space-y-[14px]">
+                  <h4 className="text-[15px] mt-[30px] font-semibold">
                     FRUITS
                   </h4>
                   <h3 className="text-3xl font-bold">
@@ -55,20 +62,21 @@ const MainCategory = () => {
                     text="Shop Now"
                     colour="#FE0600"
                     hoverColour="black"
-                  ></PrimaryButton>
+                  />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* image 3 */}
-          <div className="relative   max-w-[400px] max-h-[500px] ">
-            <img className="" src={mainCategoryThree}></img>
-
-            <div className="absolute bottom-1 overflow-hidden">
-              <div className=" space-y-[-35px]">
-                <div className="  p-4 space-y-[14px]  ">
-                  <h4 className="text-[15px]  mt-[30px] font-semibold">
+          {/* image three */}
+          <div
+            className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
+            style={{ backgroundImage: `url(${mainCategoryThree})` }}
+          >
+            <div className=" overflow-hidden">
+              <div className="space-y-[-7px] sm:space-y-[-20px] md:space-y-[-35px]">
+                <div className="p-4 space-y-[14px]">
+                  <h4 className="text-[15px] mt-[30px] font-semibold">
                     FRUITS
                   </h4>
                   <h3 className="text-3xl font-bold">
@@ -78,9 +86,9 @@ const MainCategory = () => {
                     text="Shop Now"
                     colour="#921DFF"
                     hoverColour="black"
-                  ></PrimaryButton>
+                  />
                 </div>
-                <img src={mainCategoryItemTheree}></img>
+                <img src={mainCategoryItemTheree} alt="Item Three" />
               </div>
             </div>
           </div>
