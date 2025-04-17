@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import mainCategoryOne from "../../../public/assets/c-bg-img-1.webp";
 import mainCategoryTow from "../../../public/assets/c-bg-img-2.webp";
 import mainCategoryThree from "../../../public/assets/c-bg-img-3.webp";
@@ -7,14 +7,25 @@ import mainCategoryItemOne from "../../../public/assets/c-shop-img-1.webp";
 import mainCategoryItemTwo from "../../../public/assets/c-shop-img-2.webp";
 import mainCategoryItemTheree from "../../../public/assets/c-shop-img-3.webp";
 import PrimaryButton from "../PrymaryButton/PrimaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MainCategory = () => {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 300, // Animation duration in milliseconds
+  //     once: true, // Animation runs only once
+  //     easing: "ease-in-out", // Easing style
+  //   });
+  // }, []);
   return (
     <div>
       <SectionContainer>
         <div className="flex justify-between md:flex-row flex-col gap-4 mx-auto my-[30px] rounded-md">
           {/* image one */}
           <div
+            data-aos="fade-up"
+            data-aos-duration="500"
             className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
             style={{ backgroundImage: `url(${mainCategoryOne})` }}
           >
@@ -40,6 +51,8 @@ const MainCategory = () => {
 
           {/* image two */}
           <div
+            data-aos="fade-up"
+            data-aos-duration="500"
             className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
             style={{ backgroundImage: `url(${mainCategoryTow})` }}
           >
@@ -70,6 +83,8 @@ const MainCategory = () => {
 
           {/* image three */}
           <div
+            data-aos="fade-up"
+            data-aos-duration="500"
             className="relative overflow-hidden w-full h-[400px] md:w-[400px] md:h-[430px] bg-cover bg-center"
             style={{ backgroundImage: `url(${mainCategoryThree})` }}
           >
