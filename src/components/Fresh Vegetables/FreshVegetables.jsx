@@ -47,7 +47,7 @@ const FreshVegetables = () => {
   return (
     <div>
       <div
-        className="h-[600px] py-[50px]"
+        className="min-h-[600px] py-[50px]"
         style={{
           backgroundImage: `url(${categoryBg})`,
           backgroundSize: "cover",
@@ -57,7 +57,7 @@ const FreshVegetables = () => {
       >
         <SectionContainer>
           <SectionTitle title="Fresh Vegetables"></SectionTitle>
-          <div className="flex flex-wrap justify-between gap-4 mt-[26px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[26px]">
             {products.map((product) => (
               <ProductCard key={product.id} product={product}></ProductCard>
             ))}

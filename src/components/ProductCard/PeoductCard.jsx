@@ -3,8 +3,12 @@ import { FaStar, FaPlus } from "react-icons/fa";
 const ProductCard = ({ product }) => {
   const { id, name, oldPrice, newPrice, rating, image, buttonText } = product;
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 text-center hover:shadow-lg transition-all duration-300">
-      <img src={image} alt={name} className="w-full h-40 object-contain mb-4" />
+    <div className="bg-white w-full  rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
+      <img
+        src={image}
+        alt={name}
+        className="w-full  h-40 hover:scale-110 duration-300 transform ease-out object-contain mb-4"
+      />
 
       {/* Rating */}
       <div className="flex justify-center mb-2">
