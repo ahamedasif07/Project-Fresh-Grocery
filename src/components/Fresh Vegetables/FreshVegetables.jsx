@@ -2,6 +2,7 @@ import React from "react";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import categoryBg from "../../../public/assets/category-section-background.webp";
+import ProductCard from "../ProductCard/PeoductCard";
 
 const FreshVegetables = () => {
   const products = [
@@ -56,6 +57,11 @@ const FreshVegetables = () => {
       >
         <SectionContainer>
           <SectionTitle title="Fresh Vegetables"></SectionTitle>
+          <div className="flex flex-wrap justify-between gap-4 mt-[26px]">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product}></ProductCard>
+            ))}
+          </div>
         </SectionContainer>
       </div>
     </div>
