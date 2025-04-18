@@ -20,7 +20,7 @@ const FreshVegetables = () => {
       name: "Chicken Eggs",
       oldPrice: 10.99,
       newPrice: 5.99,
-      rating: 5,
+      rating: 3,
       image: "https://i.ibb.co.com/qY0LJXMv/p-img-2.webp", // Replace with your actual image path
       buttonText: "Add To Cart",
     },
@@ -29,7 +29,7 @@ const FreshVegetables = () => {
       name: "Fresh Watermelon",
       oldPrice: 15.99,
       newPrice: 8.99,
-      rating: 5,
+      rating: 4,
       image: "https://i.ibb.co.com/TxjTJ5Zj/p-img-3.webp", // Replace with your actual image path
       buttonText: "Add To Cart",
     },

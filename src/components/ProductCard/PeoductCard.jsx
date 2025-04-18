@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       {/* Add to cart button */}
-      <button className="flex items-center justify-center gap-2 bg-green-100 text-green-600 font-semibold py-2 w-full rounded-md hover:bg-green-200 transition">
+      <button className="flex items-center justify-center gap-2 bg-green-100 text-green-600 font-semibold py-2 w-full rounded-md hover:bg-green-600 transition-all duration-300 ease-in-out hover:text-white ">
         <FaPlus /> {buttonText}
       </button>
     </div>
