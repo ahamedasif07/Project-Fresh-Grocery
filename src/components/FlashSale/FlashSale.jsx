@@ -6,7 +6,12 @@ const FlashSale = () => {
   return (
     <div className="py-[70px]">
       <SectionContainer>
-        <img src={flashSale}></img>
+        <div
+          className="w-full h-[500px] bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${flashSale})`,
+          }}
+        ></div>
       </SectionContainer>
     </div>
   );
