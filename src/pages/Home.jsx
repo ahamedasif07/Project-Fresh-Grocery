@@ -6,6 +6,7 @@ import bgImage from "../../public/assets/new-arrival-bg.webp";
 import MarketCategory from "../components/MarketCategory/MarketCategory";
 import MainCategory from "../components/MainCategory/MainCategory";
 import FreshVegetables from "../components/Fresh Vegetables/FreshVegetables";
+import FlashSale from "../components/FlashSale/FlashSale";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <MarketCategory />
       <MainCategory />
       <FreshVegetables />
+      <FlashSale />
     </div>
   );
 };

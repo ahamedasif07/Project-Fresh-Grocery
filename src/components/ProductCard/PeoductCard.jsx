@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   const { id, name, oldPrice, newPrice, rating, image, buttonText } = product;
   return (
     <div>
-      <div className="relative group border-[2px] border-transparent hover:border-[2px] hover:border-green-600 overflow-hidden bg-white w-full  rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
+      <div className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full  rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
         <img
           src={image}
           alt={name}
