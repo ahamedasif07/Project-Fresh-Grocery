@@ -8,7 +8,7 @@ const FlashSale = () => {
     <div className="py-[70px]">
       <SectionContainer>
         <div
-          className="w-full h-[500px] bg-cover bg-center"
+          className="w-full max-h-[700px] bg-cover bg-center"
           style={{
             backgroundImage: `url(${flashSale})`,
           }}
@@ -35,7 +35,7 @@ const FlashSale = () => {
               })}
             </div>
 
-            <div className="py-[20px]">
+            <div className="py-[8px] md:py-[20px]">
               <h2 className="text-5xl font-extrabold text-gray-900 my-4">
                 WOO! Flash Sale
               </h2>
