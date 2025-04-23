@@ -12,7 +12,7 @@ const FlashSale = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date().getTime() + 3 * 24 * 60 * 60 * 1000; // 3 days from now
+    const targetDate = new Date().getTime() + 5 * 24 * 60 * 60 * 1000; // 5 days from now
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
