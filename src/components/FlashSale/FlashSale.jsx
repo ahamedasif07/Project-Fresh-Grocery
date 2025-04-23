@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import flashSale from "../../../public/assets/flash_sale.webp";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import PrimaryButton from "../PrymaryButton/PrimaryButton";
 
 const FlashSale = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const targetDate = new Date().getTime() + 3 * 24 * 60 * 60 * 1000; // 3 days from now
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        clearInterval(interval);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      } else {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="py-[70px]">
       <SectionContainer>
@@ -22,14 +54,22 @@ const FlashSale = () => {
                   "text-green-500",
                   "text-red-500",
                 ];
+                const values = [
+                  timeLeft.days,
+                  timeLeft.hours,
+                  timeLeft.minutes,
+                  timeLeft.seconds,
+                ];
                 return (
-                  <div
-                    key={label}
-                    className="bg-white w-24 h-24 rounded-full flex flex-col justify-center items-center shadow"
-                  >
-                    <span className={`text-3xl font-bold ${colors[index]}`}>
-                      0
-                    </span>
+                  <div key={label}>
+                    <div className="bg-white w-24 h-24 rounded-full flex flex-col justify-center items-center shadow">
+                      <span className={`text-3xl font-bold ${colors[index]}`}>
+                        {values[index]}
+                      </span>
+                    </div>
+                    <h3 className="text-[18px] font-semibold ml-[18px] mt-1">
+                      {label}
+                    </h3>
                   </div>
                 );
               })}
