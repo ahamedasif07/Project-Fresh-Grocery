@@ -40,12 +40,12 @@ const FlashSale = () => {
     <div className="py-[70px]">
       <SectionContainer>
         <div
-          className="w-full max-h-[700px] bg-cover bg-center"
+          className="w-full h-full md:max-h-[700px] bg-cover bg-center"
           style={{
             backgroundImage: `url(${flashSale})`,
           }}
         >
-          <div className="flex justify-between items-end  py-10 px-4 md:px-[60px]">
+          <div className="flex  flex-col md:flex-row justify-center md:justify-between  items-center md:items-end  py-10 px-4 md:px-[60px]">
             <div className="  ">
               <div className="flex  gap-6 mb-8 flex-wrap">
                 {["Days", "Hours", "Minutes", "Seconds"].map((label, index) => {
@@ -76,7 +76,7 @@ const FlashSale = () => {
                 })}
               </div>
 
-              <div className="py-[8px] md:py-[20px]">
+              <div className="py-[8px] md:py-[20px]  ">
                 <h2 className="text-5xl font-extrabold text-gray-900 my-4">
                   WOO! Flash Sale
                 </h2>
@@ -93,7 +93,7 @@ const FlashSale = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-yellow-500 flex justify-center items-center h-[200px] w-[200px] rounded-full text-5xl font-semibold">
+            <div className="bg-yellow-500 flex justify-center items-center p-[20px] h-[200px] w-[200px] rounded-full text-5xl font-semibold">
               26%
               <br />
               off
