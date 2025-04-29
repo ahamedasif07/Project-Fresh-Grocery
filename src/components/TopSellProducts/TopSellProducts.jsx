@@ -54,7 +54,7 @@ const TopSellProducts = () => {
       <SectionContainer>
         <SectionTitle title="Top Selling Prodcuts"></SectionTitle>
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4 mt-[26px]">
+          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-4 mt-[26px]">
             {products.map((product) => (
               <TopSellingPRoductCard
                 key={product.id}

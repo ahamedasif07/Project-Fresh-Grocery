@@ -8,7 +8,7 @@ const TopSellingPRoductCard = ({ product }) => {
   const { id, name, oldPrice, newPrice, rating, image, buttonText } = product;
   return (
     <div>
-      <div className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white max-w-[450px] rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
+      <div className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
         <div className=" w-full flex justify-between items-center gap-4">
           <div className="w-1/2 ">
             <img
@@ -43,7 +43,7 @@ const TopSellingPRoductCard = ({ product }) => {
           </div>
         </div>
         {/* icons  */}
-        <div className="absolute top-4 right-4 transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+        <div className="absolute top-4 left-4 transform -translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
           <div className="flex flex-col gap-3">
             <p className="text-[22px] p-[6px] bg-green-200 hover:bg-green-600 hover:text-white text-gray-800 rounded-sm transition-all duration-300 ease-in-out w-fit">
               <BsArrowsMove />
