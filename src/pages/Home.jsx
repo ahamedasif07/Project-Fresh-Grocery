@@ -7,6 +7,8 @@ import MarketCategory from "../components/MarketCategory/MarketCategory";
 import MainCategory from "../components/MainCategory/MainCategory";
 import FreshVegetables from "../components/Fresh Vegetables/FreshVegetables";
 import FlashSale from "../components/FlashSale/FlashSale";
+import SectionTitle from "../components/SectionTitle/SectionTitle";
+import TopSellProducts from "../components/TopSellProducts/TopSellProducts";
 
 const Home = () => {
   return (
@@ -25,6 +27,7 @@ const Home = () => {
       <MainCategory />
       <FreshVegetables />
       <FlashSale />
+      <TopSellProducts></TopSellProducts>
     </div>
   );
 };
