@@ -66,7 +66,7 @@ const TopSellProducts = () => {
             ))}
           </div>
           {/* top selling product baners  start*/}
-          <div className="flex justify-between items-center gap-10 py-[60px] ">
+          <div className="flex md:flex-row flex-col justify-between items-center gap-10 py-[60px] ">
             <div
               data-aos="fade-right"
               className="rounded-md bg-center bg-cover h-[300px] w-full"
