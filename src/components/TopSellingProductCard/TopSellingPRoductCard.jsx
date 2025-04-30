@@ -5,10 +5,13 @@ import { BsArrowRepeat, BsArrowsMove } from "react-icons/bs";
 import { FaPlus, FaStar } from "react-icons/fa";
 
 const TopSellingPRoductCard = ({ product }) => {
-  const { id, name, oldPrice, newPrice, rating, image, buttonText } = product;
+  const { id, name, oldPrice, newPrice, rating, image } = product;
   return (
     <div>
-      <div className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300">
+      <div
+        data-aos="fade-up"
+        className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300"
+      >
         <div className=" w-full flex justify-between items-center gap-4">
           <div className="w-1/2 ">
             <img

@@ -8,7 +8,7 @@ const MainLayOut = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      once: true, // Animation runs only once
+      once: false, // Animation runs only once
       easing: "ease-in-out", // Easing style
     });
   }, []);
