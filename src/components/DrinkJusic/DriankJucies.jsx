@@ -3,6 +3,8 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 import categoryBg from "../../../public/assets/category-section-background.webp";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProductCard from "../ProductCard/PeoductCard";
+import bestDealImage from "../../../public/assets/best-deal-bg.webp";
+import PrimaryButton from "../PrymaryButton/PrimaryButton";
 
 const DriankJucies = () => {
   const products = [
@@ -62,6 +64,36 @@ const DriankJucies = () => {
             ))}
           </div>
         </SectionContainer>
+        {/* best deal section */}
+
+        <div className="pt-[70px]">
+          <div
+            className="h-[370px] "
+            style={{
+              backgroundImage: `url(${bestDealImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="p-6  ">
+              <h2 className="text-center font-bold text-[50px] mt-[40px]">
+                Get the best deal for Grocery
+              </h2>
+              <p className="text-center text-[18px]">
+                You get into the 2k+ best Products in Flash offer with as into
+                the find to <br /> makein shaped sofa for sale.
+              </p>
+              <div className="mt-[10px] flex justify-center">
+                <PrimaryButton
+                  text="Shop Now"
+                  colour="#34A853"
+                  hoverColour="#0A0A0A"
+                ></PrimaryButton>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
