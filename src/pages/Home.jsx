@@ -9,6 +9,7 @@ import FreshVegetables from "../components/Fresh Vegetables/FreshVegetables";
 import FlashSale from "../components/FlashSale/FlashSale";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import TopSellProducts from "../components/TopSellProducts/TopSellProducts";
+import DriankJucies from "../components/DrinkJusic/DriankJucies";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <FreshVegetables />
       <FlashSale />
       <TopSellProducts></TopSellProducts>
+      <DriankJucies />
     </div>
   );
 };

@@ -12,12 +12,12 @@ const ProductCard = ({ product }) => {
     <div>
       <div
         data-aos="fade-up"
-        className="relative group border-[2px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full  rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300"
+        className="relative group border-[1px] border-transparent hover:border-[1px] hover:border-green-600 overflow-hidden bg-white w-full  rounded-lg shadow-md p-4 py-[30px] text-center hover:shadow-lg transition-all duration-300"
       >
         <img
           src={image}
           alt={name}
-          className="w-full  h-40 hover:scale-110 duration-300 transform ease-out object-contain mb-4"
+          className="w-full  h-40 hover:scale-110 duration-300 transform ease-in-out object-contain mb-4"
         />
 
         {/* Rating */}
