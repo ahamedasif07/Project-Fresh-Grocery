@@ -45,6 +45,106 @@ const DriankJucies = () => {
       buttonText: "Add To Cart",
     },
   ];
+  // new araible data
+  const newProducts = [
+    {
+      name: "Fresh Red Tomatos",
+      category: "Vegetable",
+      oldPrice: 12.0,
+      newPrice: 6.99,
+      image: "https://i.ibb.co.com/4ZMH5j8V/p-img-15.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Chicken Eggs",
+      category: "Poultry",
+      oldPrice: 10.0,
+      newPrice: 5.99,
+      image: "https://i.ibb.co.com/1tWXP8C4/p-img-16.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Fresh Watermelon",
+      category: "Fruit",
+      oldPrice: 15.0,
+      newPrice: 8.99,
+      image: "https://i.ibb.co.com/b5Jf7DwW/p-img-17.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Beef Steak",
+      category: "Meat",
+      oldPrice: 20.0,
+      newPrice: 12.99,
+      image: "https://i.ibb.co.com/RknK53dC/p-img-18.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Fresh Red Tomatos",
+      category: "Vegetable",
+      oldPrice: 12.0,
+      newPrice: 6.99,
+      image: "https://i.ibb.co.com/rRkR4XW3/p-img-19.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Chicken Eggs",
+      category: "Poultry",
+      oldPrice: 10.0,
+      newPrice: 5.99,
+      image: "https://i.ibb.co.com/BxQgrvF/p-img-20.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Fresh Watermelon",
+      category: "Fruit",
+      oldPrice: 15.0,
+      newPrice: 8.99,
+      image: "https://i.ibb.co.com/nsm1CqmM/p-img-21.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Beef Steak",
+      category: "Meat",
+      oldPrice: 20.0,
+      newPrice: 12.99,
+      image: "https://i.ibb.co.com/nsm1CqmM/p-img-21.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Fresh Red Tomatos",
+      category: "Vegetable",
+      oldPrice: 12.0,
+      newPrice: 6.99,
+      image: "https://i.ibb.co.com/T9gSdX8/p-img-22.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Chicken Eggs",
+      category: "Poultry",
+      oldPrice: 10.0,
+      newPrice: 5.99,
+      image: "https://i.ibb.co.com/d4x0zg9t/p-img-23.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Fresh Watermelon",
+      category: "Fruit",
+      oldPrice: 15.0,
+      newPrice: 8.99,
+      image: "https://i.ibb.co.com/d4x0zg9t/p-img-23.webp",
+      buttonText: "Add To Cart",
+    },
+    {
+      name: "Beef Steak",
+      category: "Meat",
+      oldPrice: 20.0,
+      newPrice: 12.99,
+      image: "https://i.ibb.co.com/9Hv0NYdx/p-img-24.webp",
+      buttonText: "Add To Cart",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -65,7 +165,6 @@ const DriankJucies = () => {
           </div>
         </SectionContainer>
         {/* best deal section */}
-
         <div className="pt-[70px]">
           <div
             className="h-[370px] "
@@ -93,6 +192,18 @@ const DriankJucies = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* new araivle product start */}
+
+        <div className="my-[50px]">
+          <SectionContainer>
+            <SectionTitle title="New  Arrivals"></SectionTitle>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-[26px]">
+              {newProducts.map((product) => (
+                <ProductCard key={product.id} product={product}></ProductCard>
+              ))}
+            </div>
+          </SectionContainer>
         </div>
       </div>
     </div>
