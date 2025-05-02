@@ -5,6 +5,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import ProductCard from "../ProductCard/PeoductCard";
 import bestDealImage from "../../../public/assets/best-deal-bg.webp";
 import PrimaryButton from "../PrymaryButton/PrimaryButton";
+import grosaryBg from "../../../public/assets/grocery-bg-2.webp";
 
 const DriankJucies = () => {
   const products = [
@@ -205,6 +206,29 @@ const DriankJucies = () => {
             </div>
           </SectionContainer>
         </div>
+        {/* Get the best deal for Modern Grocery */}
+        <SectionContainer>
+          <div
+            className="h-[250px] py-[40px] md:py-[70px]"
+            style={{
+              backgroundImage: `url(${grosaryBg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h2 className="text-center text-3xl md:text-5xl text-gray-200 font-bold">
+              Get the best deal for Modern Grocery
+            </h2>
+            <div className="mt-[20px] flex justify-center">
+              <PrimaryButton
+                text="Shop Now"
+                colour="#FFBB38"
+                hoverColour="#0A0A0A"
+              ></PrimaryButton>
+            </div>
+          </div>
+        </SectionContainer>
       </div>
     </div>
   );
