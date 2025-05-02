@@ -55,6 +55,7 @@ const DriankJucies = () => {
       newPrice: 6.99,
       image: "https://i.ibb.co.com/4ZMH5j8V/p-img-15.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Chicken Eggs",
@@ -63,6 +64,7 @@ const DriankJucies = () => {
       newPrice: 5.99,
       image: "https://i.ibb.co.com/1tWXP8C4/p-img-16.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Fresh Watermelon",
@@ -71,6 +73,7 @@ const DriankJucies = () => {
       newPrice: 8.99,
       image: "https://i.ibb.co.com/b5Jf7DwW/p-img-17.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Beef Steak",
@@ -79,6 +82,7 @@ const DriankJucies = () => {
       newPrice: 12.99,
       image: "https://i.ibb.co.com/RknK53dC/p-img-18.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Fresh Red Tomatos",
@@ -87,6 +91,7 @@ const DriankJucies = () => {
       newPrice: 6.99,
       image: "https://i.ibb.co.com/rRkR4XW3/p-img-19.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Chicken Eggs",
@@ -95,6 +100,7 @@ const DriankJucies = () => {
       newPrice: 5.99,
       image: "https://i.ibb.co.com/BxQgrvF/p-img-20.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Fresh Watermelon",
@@ -103,6 +109,7 @@ const DriankJucies = () => {
       newPrice: 8.99,
       image: "https://i.ibb.co.com/nsm1CqmM/p-img-21.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Beef Steak",
@@ -111,6 +118,7 @@ const DriankJucies = () => {
       newPrice: 12.99,
       image: "https://i.ibb.co.com/nsm1CqmM/p-img-21.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Fresh Red Tomatos",
@@ -119,6 +127,7 @@ const DriankJucies = () => {
       newPrice: 6.99,
       image: "https://i.ibb.co.com/T9gSdX8/p-img-22.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Chicken Eggs",
@@ -127,6 +136,7 @@ const DriankJucies = () => {
       newPrice: 5.99,
       image: "https://i.ibb.co.com/d4x0zg9t/p-img-23.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Fresh Watermelon",
@@ -135,6 +145,7 @@ const DriankJucies = () => {
       newPrice: 8.99,
       image: "https://i.ibb.co.com/d4x0zg9t/p-img-23.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
     {
       name: "Beef Steak",
@@ -143,6 +154,7 @@ const DriankJucies = () => {
       newPrice: 12.99,
       image: "https://i.ibb.co.com/9Hv0NYdx/p-img-24.webp",
       buttonText: "Add To Cart",
+      rating: 5,
     },
   ];
 
