@@ -27,7 +27,7 @@ const PopolurSelles = () => {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/KpL0Hj7t/p-img-29.webp",
+      image: "https://i.ibb.co.com/YTBQBV84/p-img-30.webp",
     },
     {
       name: "Fresh Red Tomatos",
@@ -45,32 +45,32 @@ const PopolurSelles = () => {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/RTgvF1qm/p-img-32.webp",
+      image: "https://i.ibb.co.com/YTBQBV84/p-img-30.webp",
     },
 
     {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/gbHSG7XR/p-img-34.webp",
+      image: "https://i.ibb.co.com/XZYFHLmP/p-img-26.webp",
     },
     {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/TNpFMtj/p-img-35.webp",
+      image: "https://i.ibb.co.com/XZYFHLmP/p-img-26.webp",
     },
     {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/zhSsJy6c/p-img-36.webp",
+      image: "https://i.ibb.co.com/XZYFHLmP/p-img-26.webp",
     },
     {
       name: "Fresh Red Tomatos",
       originalPrice: 12.99,
       discountedPrice: 6.99,
-      image: "https://i.ibb.co.com/KpL0Hj7t/p-img-29.webp",
+      image: "https://i.ibb.co.com/YTBQBV84/p-img-30.webp",
     },
   ];
 
@@ -79,7 +79,7 @@ const PopolurSelles = () => {
       <SectionContainer>
         <div className="py-[40px]">
           <SectionTitle title="Popular Sales"></SectionTitle>
-          <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-10">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-x-10 py-[30px]">
             {products.map((product) => (
               <PopularProductCard
                 key={product.image}
