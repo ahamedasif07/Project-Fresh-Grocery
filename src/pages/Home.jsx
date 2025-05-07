@@ -10,6 +10,7 @@ import FlashSale from "../components/FlashSale/FlashSale";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import TopSellProducts from "../components/TopSellProducts/TopSellProducts";
 import DriankJucies from "../components/DrinkJusic/DriankJucies";
+import PopolurSelles from "../components/PopolurSels/PopolurSelles";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <FlashSale />
       <TopSellProducts></TopSellProducts>
       <DriankJucies />
+      <PopolurSelles />
     </div>
   );
 };
