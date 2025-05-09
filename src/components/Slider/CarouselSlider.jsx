@@ -17,8 +17,15 @@ const CarouselSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    appendDots: (dots) => (
+      <div>
+        <ul className="flex justify-start gap-3 mt-6">{dots}</ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div className=" dot w-[30px] h-[6px] bg-green-600 rounded-md transition-all duration-300"></div>
+    ),
   };
-
   return (
     <div className="relative z-0">
       {" "}

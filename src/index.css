@@ -5,3 +5,11 @@
 body {
   font-family: "Inter", serif;
 }
+/* This uses Tailwind's @apply directive */
+.dot {
+  @apply bg-gray-300;
+}
+
+li.slick-active .dot {
+  @apply bg-green-600;
+}
