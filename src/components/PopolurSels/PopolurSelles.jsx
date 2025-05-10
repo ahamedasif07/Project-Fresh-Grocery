@@ -72,6 +72,12 @@ const PopolurSelles = () => {
       discountedPrice: 6.99,
       image: "https://i.ibb.co.com/YTBQBV84/p-img-30.webp",
     },
+    {
+      name: "Fresh Red Tomatos",
+      originalPrice: 12.99,
+      discountedPrice: 6.99,
+      image: "https://i.ibb.co.com/YTBQBV84/p-img-30.webp",
+    },
   ];
 
   return (

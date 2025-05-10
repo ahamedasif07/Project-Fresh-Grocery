@@ -11,6 +11,7 @@ import SectionTitle from "../components/SectionTitle/SectionTitle";
 import TopSellProducts from "../components/TopSellProducts/TopSellProducts";
 import DriankJucies from "../components/DrinkJusic/DriankJucies";
 import PopolurSelles from "../components/PopolurSels/PopolurSelles";
+import FooterTop from "../components/FooterTop/FooterTop";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
       <TopSellProducts></TopSellProducts>
       <DriankJucies />
       <PopolurSelles />
+      <FooterTop />
     </div>
   );
 };
