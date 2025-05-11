@@ -33,7 +33,6 @@ const Home = () => {
       <TopSellProducts></TopSellProducts>
       <DriankJucies />
       <PopolurSelles />
-      <FooterTop />
     </div>
   );
 };

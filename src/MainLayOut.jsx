@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer/Footer";
 
 const MainLayOut = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const MainLayOut = () => {
     <div className="overflow-hidden">
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };
