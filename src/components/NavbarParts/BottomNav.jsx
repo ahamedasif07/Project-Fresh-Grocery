@@ -72,31 +72,34 @@ const BottomNav = () => {
                   <li className="cursor-pointer">Home</li>
                   <li className="cursor-pointer">Shop +</li>
 
-                  {/* Pages Dropdown */}
+                  {/* Pages Dropdown start*/}
                   <li className="relative group  text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
                     <span>Pages +</span>
                     <ul
-                      className="absolute left-0 z-[1000] top-full mt-[20px] w-56 bg-white text-gray-400 shadow-lg 
+                      className="absolute left-0 z-[1000] top-full py-2 rounded-sm mt-[20px] w-56 bg-white text-gray-400 shadow-lg 
                 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
                     >
-                      <li className="px-4 py-2 hover:bg-gray-100">
+                      <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Product-details
                       </li>
-                      <li className="px-4 py-2 hover:bg-gray-100">
+                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Privacy Policy
                       </li>
-                      <li className="px-4 py-2 hover:bg-gray-100">
+                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Terms & Condition
                       </li>
-                      <li className="px-4 py-2 hover:bg-gray-100">FAQ</li>
-                      <li className="px-4 py-2 hover:bg-gray-100">
+                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                        FAQ
+                      </li>
+                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Shop Category Icon
                       </li>
-                      <li className="px-4 py-2 hover:bg-gray-100">
+                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Shop List View
                       </li>
                     </ul>
                   </li>
+                  {/* Pages Dropdown end*/}
 
                   <li className="cursor-pointer">About</li>
                   <li className="cursor-pointer">Blog</li>
