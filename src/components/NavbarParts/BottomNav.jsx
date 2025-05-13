@@ -69,19 +69,39 @@ const BottomNav = () => {
               {/* munu item start */}
               <div className="px-2">
                 <ul className="flex justify-center space-x-6 text-white font-semibold">
-                  {[
-                    "Home",
-                    "Shop +",
-                    "Pages +",
-                    "About",
-                    "Blog",
-                    "User Dashboard",
-                    "Contact",
-                  ].map((item, index) => (
-                    <li key={index} className="cursor-pointer ">
-                      {item}
-                    </li>
-                  ))}
+                  <li className="cursor-pointer">Home</li>
+                  <li className="cursor-pointer">Shop +</li>
+
+                  {/* Pages Dropdown */}
+                  <li className="relative group  text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
+                    <span>Pages +</span>
+                    <ul
+                      className="absolute left-0 z-[1000] top-full mt-[20px] w-56 bg-white text-gray-400 shadow-lg 
+                opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
+                    >
+                      <li className="px-4 py-2 hover:bg-gray-100">
+                        Product-details
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100">
+                        Privacy Policy
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100">
+                        Terms & Condition
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100">FAQ</li>
+                      <li className="px-4 py-2 hover:bg-gray-100">
+                        Shop Category Icon
+                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100">
+                        Shop List View
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="cursor-pointer">About</li>
+                  <li className="cursor-pointer">Blog</li>
+                  <li className="cursor-pointer">User Dashboard</li>
+                  <li className="cursor-pointer">Contact</li>
                 </ul>
               </div>
               {/* munu item end */}
