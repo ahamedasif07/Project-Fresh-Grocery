@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import { FaAngleRight, FaBars } from "react-icons/fa";
+import dropdowenImg from "../../../public/assets/empty-wishlist.webp";
 
 const BottomNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +75,7 @@ const BottomNav = () => {
                   <li className="relative group   text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
                     <span>Shop</span>
                     <ul
-                      className="absolute left-0 z-[1000] w-[850px] top-full py-2 rounded-sm mt-[20px]  bg-white text-gray-400 shadow-lg 
+                      className="absolute -left-35 z-[1000] w-[850px] top-full py-2 rounded-sm mt-[20px]  bg-white text-gray-400 shadow-lg 
                 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
                     >
                       <div className="flex items-center justify-around w-[850px]">
@@ -119,6 +120,13 @@ const BottomNav = () => {
                               T-Shirt
                             </li>
                           </ul>
+                        </div>
+                        <div className="max-h-[300px] max-w-[300px]">
+                          <img
+                            className="h-full w-full"
+                            src={dropdowenImg}
+                            alt=""
+                          />
                         </div>
                       </div>
                     </ul>
