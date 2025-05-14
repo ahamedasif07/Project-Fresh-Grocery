@@ -75,7 +75,7 @@ const BottomNav = () => {
                   <li className="relative group   text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
                     <span>Shop</span>
                     <ul
-                      className="absolute -left-35 z-[1000] w-[850px] top-full py-2 rounded-sm mt-[20px]  bg-white text-gray-400 shadow-lg 
+                      className="absolute -left-35 z-[1000] px-[70px] w-[850px] top-full py-2 rounded-sm mt-[20px]  bg-white text-gray-400 shadow-lg 
                 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
                     >
                       <div className="flex items-center justify-around w-[850px]">
@@ -94,30 +94,30 @@ const BottomNav = () => {
                           </ul>
                         </div>
                         <div>
-                          <h2 className="text-black">Dresses</h2>
+                          <h2 className="text-black">Bags</h2>
                           <ul>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Shirt
+                              HandBags
                             </li>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Skart
+                              Mobile Bags
                             </li>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              T-Shirt
+                              School Bags
                             </li>
                           </ul>
                         </div>
                         <div>
-                          <h2 className="text-black">Dresses</h2>
+                          <h2 className="text-black">Cosmetics</h2>
                           <ul>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Shirt
+                              Liptics
                             </li>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Skart
+                              Foundation
                             </li>
                             <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              T-Shirt
+                              Eye Liner
                             </li>
                           </ul>
                         </div>
