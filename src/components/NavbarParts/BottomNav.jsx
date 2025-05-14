@@ -70,7 +70,60 @@ const BottomNav = () => {
               <div className="px-2">
                 <ul className="flex justify-center space-x-6 text-white font-semibold">
                   <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">Shop +</li>
+                  {/* shop drop dowen stsrt */}
+                  <li className="relative group   text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
+                    <span>Shop</span>
+                    <ul
+                      className="absolute left-0 z-[1000] w-[850px] top-full py-2 rounded-sm mt-[20px]  bg-white text-gray-400 shadow-lg 
+                opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
+                    >
+                      <div className="flex items-center justify-around w-[850px]">
+                        <div>
+                          <h2 className="text-black">Dresses</h2>
+                          <ul>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Shirt
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Skart
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              T-Shirt
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h2 className="text-black">Dresses</h2>
+                          <ul>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Shirt
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Skart
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              T-Shirt
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h2 className="text-black">Dresses</h2>
+                          <ul>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Shirt
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              Skart
+                            </li>
+                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                              T-Shirt
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  {/* shop drop dowen end */}
 
                   {/* Pages Dropdown start*/}
                   <li className="relative group  text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
@@ -102,7 +155,19 @@ const BottomNav = () => {
                   {/* Pages Dropdown end*/}
 
                   <li className="cursor-pointer">About</li>
-                  <li className="cursor-pointer">Blog</li>
+                  {/* blog drop dowen start  */}
+                  <li className="relative group  text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
+                    <span>Blog</span>
+                    <ul
+                      className="absolute left-0 z-[1000] top-full py-2 rounded-sm mt-[20px] w-56 bg-white text-gray-400 shadow-lg 
+                opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 flex flex-col items-start "
+                    >
+                      <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                        Blog Details
+                      </li>
+                    </ul>
+                  </li>
+                  {/* blog drop dowen end  */}
                   <li className="cursor-pointer">User Dashboard</li>
                   <li className="cursor-pointer">Contact</li>
                 </ul>
