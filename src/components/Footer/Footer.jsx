@@ -7,7 +7,7 @@ const Footer = () => {
         <FooterTop />
       </div>
       <footer className="bg-[#111] text-white px-6 pb-[40px] pt-[70px]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-around gap-[45px] border-b border-gray-700 pb-8">
           {/* Logo & Links */}
           <div>
             <div className="flex items-center mb-4">
