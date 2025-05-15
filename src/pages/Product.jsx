@@ -5,8 +5,7 @@ import SectionContainer from "../components/SectionContainer/SectionContainer";
 
 const Product = () => {
   return (
-    <div>
-      <h2 className="text-7xl font bold">product page </h2>
+    <div className="mt-[50px]">
       <SectionContainer>
         <ProductSideBar />
       </SectionContainer>

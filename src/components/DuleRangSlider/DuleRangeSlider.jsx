@@ -19,7 +19,7 @@ const DualRangeSlider = () => {
   const getPercent = (value) => ((value - minVal) / (maxVal - minVal)) * 100;
 
   return (
-    <div className="w-full px-2">
+    <div className="w-full ">
       {/* Tailwind-compatible thumb style */}
       <style>
         {`
