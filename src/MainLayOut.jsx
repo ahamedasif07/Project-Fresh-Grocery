@@ -7,16 +7,13 @@ import Footer from "./components/Footer/Footer";
 
 const MainLayOut = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: false, // Animation runs only once
-      easing: "ease-in-out", // Easing style
-    });
+    AOS.init({ duration: 1000, once: false, easing: "ease-in-out" });
   }, []);
+
   return (
     <div className="overflow-hidden">
       <Navbar />
-      <Outlet />
+      <Outlet /> {/* ✅ must be here to render children like Home or Product */}
       <Footer />
     </div>
   );

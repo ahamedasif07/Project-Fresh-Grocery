@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import { FaAngleRight, FaBars } from "react-icons/fa";
 import dropdowenImg from "../../../public/assets/empty-wishlist.webp";
+import { Link } from "react-router-dom";
 
 const BottomNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +71,9 @@ const BottomNav = () => {
               {/* munu item start */}
               <div className="px-2">
                 <ul className="flex justify-center space-x-6 text-white font-semibold">
-                  <li className="cursor-pointer">Home</li>
+                  <li className="cursor-pointer">
+                    <Link to="/">Home</Link>
+                  </li>
                   {/* shop drop dowen stsrt */}
                   <li className="relative group   text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
                     <span>Shop</span>
@@ -82,42 +85,87 @@ const BottomNav = () => {
                         <div>
                           <h2 className="text-black">Dresses</h2>
                           <ul>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Shirt
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Shirt
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Skart
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Skart
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              T-Shirt
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                T-Shirt
+                              </Link>
                             </li>
                           </ul>
                         </div>
                         <div>
                           <h2 className="text-black">Bags</h2>
                           <ul>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              HandBags
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                HandBags
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Mobile Bags
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Mobile Bags
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              School Bags
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                School Bags
+                              </Link>
                             </li>
                           </ul>
                         </div>
                         <div>
                           <h2 className="text-black">Cosmetics</h2>
                           <ul>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Liptics
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Liptics
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Foundation
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Foundation
+                              </Link>
                             </li>
-                            <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                              Eye Liner
+                            <li>
+                              <Link
+                                to="/product"
+                                className="block px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600"
+                              >
+                                Eye Liner
+                              </Link>
                             </li>
                           </ul>
                         </div>
