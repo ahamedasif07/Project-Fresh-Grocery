@@ -21,7 +21,10 @@ const FooterTop = () => {
               </p>
 
               {/* input filde */}
-              <div className="flex items-center ml-[50px] mt-[10px]">
+              <div
+                data-aos="fade-left"
+                className="flex items-center ml-[50px] mt-[10px]"
+              >
                 <div className="flex items-center gap-3 w-[250px] md:w-[300px] px-6 py-[14px]  bg-white ">
                   <span>
                     <MdOutlineMail />

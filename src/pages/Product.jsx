@@ -9,8 +9,12 @@ const Product = () => {
     <div className="mt-[50px]">
       <SectionContainer>
         <div className="flex flex-col md:flex-row items-start gap-2 md:gap-22">
-          <ProductSideBar />
-          <PaginationBar />
+          <div>
+            <ProductSideBar />
+          </div>
+          <div className="w-full">
+            <PaginationBar />
+          </div>
         </div>
       </SectionContainer>
     </div>
