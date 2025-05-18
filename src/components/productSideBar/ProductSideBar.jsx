@@ -34,8 +34,8 @@ const ProductSideBar = () => {
   const weights = ["500gm", "1kg", "2kg", "5kg", "10kg"];
 
   return (
-    <div className="w-65 mx-auto max-w-7xl px-0 pb-[40px]">
-      <div className="w-full p-4  bg-white shadow rounded space-y-6 text-sm">
+    <div className="w-full  px-0 pb-[40px]">
+      <div className="w-full  p-4   bg-white shadow rounded space-y-6 text-sm">
         {/* Categories */}
         <div>
           <h2 className="font-semibold text-[18px] mb-2">Product Categories</h2>
@@ -86,7 +86,7 @@ const ProductSideBar = () => {
       {/* side bar image */}
       <div
         data-aos="fade-up"
-        className="mt-[20px] rounded-sm p-4 bg-center bg-cover h-[250px] w-65 "
+        className="mt-[20px] rounded-sm p-4 bg-center bg-cover h-[250px] w-full lg:w-65 "
         style={{ backgroundImage: `url(${sidebarImage})` }}
       >
         <div className="p-5">
