@@ -11,6 +11,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import ReportToast from "../ReportTost/ReportTost";
+import ProductReview from "../ProductReview/ProductReview";
 
 const images = [
   { src: eggplant, alt: "Eggplant" },
@@ -181,6 +182,9 @@ const ProductDetailSlider = () => {
       </div>
       <div>
         <ReportToast report={report} setRepot={setRepot} />
+      </div>
+      <div>
+        <ProductReview />
       </div>
     </div>
   );
