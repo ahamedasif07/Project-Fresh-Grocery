@@ -19,6 +19,7 @@ const PageHeader = ({ heading, path }) => {
           <h2 className="text-center text-[40px] font-bold ">{heading}</h2>
         </SectionContainer>
       </div>
+      <div></div>
     </div>
   );
 };
