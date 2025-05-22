@@ -1,7 +1,8 @@
 import React from "react";
 import HeaderBg from "../../../public/assets/new-arrival-bg.webp";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
-const PageHeader = () => {
+const PageHeader = ({ heading, path }) => {
   return (
     <div>
       <div
@@ -12,7 +13,12 @@ const PageHeader = () => {
           backgroundRepeat: "no-repeat",
           height: "200px",
         }}
-      ></div>
+      >
+        <SectionContainer>
+          <p className="pt-[60px] text-gray-700 text-[16px]">{path}</p>
+          <h2 className="text-center text-[40px] font-bold ">{heading}</h2>
+        </SectionContainer>
+      </div>
     </div>
   );
 };

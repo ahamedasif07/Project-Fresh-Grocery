@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <div>
-        <PageHeader />
+        <PageHeader heading="Privacy Policy" path="Home / Privacy Policy" />
       </div>
     </div>
   );
