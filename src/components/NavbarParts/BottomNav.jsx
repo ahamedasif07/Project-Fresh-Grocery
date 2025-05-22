@@ -193,9 +193,12 @@ const BottomNav = () => {
                           Product-details
                         </li>
                       </Link>
-                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                        Privacy Policy
-                      </li>
+                      <Link to="/PrivacyPolicy">
+                        <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                          Privacy Policy
+                        </li>
+                      </Link>
+
                       <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Terms & Condition
                       </li>

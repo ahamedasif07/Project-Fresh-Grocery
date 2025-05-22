@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import ProductCard from "../ProductCard/PeoductCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import profileImg from "../../../public/assets/hero-img-2.webp";
 // Make sure this import matches your icon library
 
 const ProductReview = () => {
@@ -114,7 +115,7 @@ const ProductReview = () => {
           <div className="bg-white  ">
             <div className="flex items-start space-x-4">
               <img
-                src="https://via.placeholder.com/64"
+                src={profileImg}
                 alt="User avatar"
                 className="w-16 h-16 rounded-full"
               />
@@ -137,9 +138,12 @@ const ProductReview = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 mt-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus fugit nemo doloribus eius optio sint eum soluta
+                  inventore, minus recusandae dolores fuga! Magni minima atque,
+                  quia, quod pariatur assumenda excepturi id dicta, non quis
+                  eligendi quasi officia repudiandae odit sunt itaque. Corrupti
+                  illum minus ipsum quas reiciendis, ipsam animi a?
                 </p>
               </div>
             </div>
