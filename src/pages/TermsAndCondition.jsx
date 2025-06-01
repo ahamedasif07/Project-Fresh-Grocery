@@ -25,7 +25,7 @@ const TermsAndCondition = () => {
                 means expressing consent to the way you handle and process
                 personal data. It has survived not only five centuries but also
                 the on leap into electronic typesetting, remaining essentially
-                unchanged. It wasn’t popularised in the 1960s with the release
+                unchanged.. It wasn’t popularised in the 1960s with the release
                 of Letraset sheets containing Lorem Ipsum passages, and more
                 recently with desktop publishing software like Aldus PageMaker
                 including versions of Lorem Ipsum to make a type specimen book.
