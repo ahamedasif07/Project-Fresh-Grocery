@@ -204,9 +204,11 @@ const BottomNav = () => {
                         </li>
                       </Link>
 
-                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                        FAQ
-                      </li>
+                      <Link to="/Faq">
+                        <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                          FAQ
+                        </li>
+                      </Link>
                       <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
                         Shop Category Icon
                       </li>

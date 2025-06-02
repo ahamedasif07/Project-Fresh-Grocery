@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import ProductDetails from "./pages/ProductDetails";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
+import Faq from "./pages/Faq";
 
 export default function AppRouter() {
   return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
           <Route path="/ProductDetails" element={<ProductDetails />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
+          <Route path="/faq" element={<Faq />} />
         </Route>
       </Routes>
     </Router>
