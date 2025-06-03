@@ -39,14 +39,14 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-4">
+    <div className="md:w-1/2 w-full p-4">
       <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => {
         const isOpen = openIndex === index;
         return (
           <div
             key={index}
-            className={`mb-4 border rounded transition-colors duration-300 ${
+            className={`mb-6 shadow-lg rounded transition-colors duration-300 ${
               isOpen ? "bg-green-600 text-white" : "bg-white text-black"
             }`}
           >
@@ -55,7 +55,16 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              {isOpen ? <FaMinus /> : <FaPlus />}
+              {isOpen ? (
+                <span className="text-white">
+                  <FaMinus />
+                </span>
+              ) : (
+                <span className="text-green-600">
+                  {" "}
+                  <FaPlus />
+                </span>
+              )}
             </button>
             <div
               ref={(el) => (contentRefs.current[index] = el)}
