@@ -9,7 +9,7 @@ const Faq = () => {
     <div>
       <PageHeader heading="Faq" path="Home / Faq"></PageHeader>
       <SectionContainer>
-        <div className="flex  gap-5 items-start py-[50px]">
+        <div className="flex md:flex-row flex-col  gap-5 items-start  py-[50px]">
           <FAQ />
           <ContactForm />
         </div>
