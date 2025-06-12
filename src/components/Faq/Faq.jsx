@@ -46,7 +46,7 @@ const FAQ = () => {
         return (
           <div
             key={index}
-            className={`mb-6 shadow-lg rounded transition-colors duration-300 ${
+            className={`mb-8 shadow-lg rounded transition-colors duration-300 ${
               isOpen ? "bg-green-600 text-white" : "bg-white text-black"
             }`}
           >
