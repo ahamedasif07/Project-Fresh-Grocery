@@ -209,12 +209,16 @@ const BottomNav = () => {
                           FAQ
                         </li>
                       </Link>
-                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                        Shop Category Icon
-                      </li>
-                      <li className="px-4 py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
-                        Shop List View
-                      </li>
+                      <Link to="/product">
+                        <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                          Shop Category Icon
+                        </li>
+                      </Link>
+                      <Link to="/product">
+                        <li className="px-4  py-2 text-[15px] font-medium text-gray-500 hover:text-green-600">
+                          Shop List View
+                        </li>
+                      </Link>
                     </ul>
                   </li>
                   {/* Pages Dropdown end*/}
