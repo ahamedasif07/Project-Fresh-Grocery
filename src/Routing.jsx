@@ -6,6 +6,7 @@ import ProductDetails from "./pages/ProductDetails";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
 import Faq from "./pages/Faq";
+import UserDashBord from "./pages/UserDashBord";
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/dashbord" element={<UserDashBord />} />
         </Route>
       </Routes>
     </Router>

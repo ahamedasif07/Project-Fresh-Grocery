@@ -237,7 +237,9 @@ const BottomNav = () => {
                     </ul>
                   </li>
                   {/* blog drop dowen end  */}
-                  <li className="cursor-pointer">User Dashboard</li>
+                  <Link to="/dashbord">
+                    <li className="cursor-pointer">Dashbord</li>
+                  </Link>
                   <li className="cursor-pointer">Contact</li>
                 </ul>
               </div>
