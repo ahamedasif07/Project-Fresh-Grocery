@@ -240,7 +240,9 @@ const BottomNav = () => {
                   <Link to="/dashbord">
                     <li className="cursor-pointer">Dashbord</li>
                   </Link>
-                  <li className="cursor-pointer">Contact</li>
+                  <Link to="/contact">
+                    <li className="cursor-pointer">Contact</li>
+                  </Link>
                 </ul>
               </div>
               {/* munu item end */}

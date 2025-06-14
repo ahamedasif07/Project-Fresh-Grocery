@@ -7,6 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndCondition from "./pages/TermsAndCondition";
 import Faq from "./pages/Faq";
 import UserDashBord from "./pages/UserDashBord";
+import Contact from "./pages/Contact";
 
 export default function AppRouter() {
   return (
@@ -21,6 +22,7 @@ export default function AppRouter() {
           <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/dashbord" element={<UserDashBord />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

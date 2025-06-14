@@ -1,17 +1,17 @@
 import React from "react";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
-import Dashboard from "../components/DashBord/DashBord";
+import ContactInfo from "../components/ContactInfo/ContactInfo";
 import PageHeader from "../components/PageHeader/PageHeader";
 
-const UserDashBord = () => {
+const Contact = () => {
   return (
     <div>
-      <PageHeader heading="Dashbord" path="Home / Dashbord"></PageHeader>
+      <PageHeader heading="Contact" path="Home / Contact"></PageHeader>
       <SectionContainer>
-        <Dashboard />
+        <ContactInfo />
       </SectionContainer>
     </div>
   );
 };
 
-export default UserDashBord;
+export default Contact;
