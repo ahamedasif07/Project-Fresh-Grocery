@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaHeadset, FaShoppingCart, FaTruck } from "react-icons/fa";
+import { FaEdit, FaHeadset, FaShoppingCart, FaTruck } from "react-icons/fa";
+import profileImage from "../../../public/assets/hero-img-2.webp";
 
 const DashboardPage = () => {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -44,6 +45,7 @@ const DashboardPage = () => {
         <h1 className="text-2xl font-bold mb-4">{activeTab}</h1>
         <div className="bg-white p-6 rounded shadow">
           {/* Simple conditional rendering */}
+          {/* dashbord path randaring */}
           {activeTab === "Dashboard" && (
             <div className="flex-1 p-8">
               {/* Header */}
@@ -138,9 +140,146 @@ const DashboardPage = () => {
               </div>
             </div>
           )}
-
+          {/* personal info */}
           {activeTab === "Personal Info" && (
-            <p>Update your personal details here.</p>
+            <div className="min-h-screen bg-white p-4 md:p-10 flex items-start gap-8 justify-between">
+              <form className="w-2/3 max-w-3xl space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {/* First Row */}
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      First Name<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      Last Name<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+
+                  {/* Second Row */}
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      Email<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="user@gmail.com"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      Phone<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="+880388**0899"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+
+                  {/* Country */}
+                  <div className="md:col-span-2">
+                    <label className="block mb-1 font-medium">
+                      Country<span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    >
+                      <option>Choose...</option>
+                      <option>Bangladesh</option>
+                      <option>UK</option>
+                      <option>USA</option>
+                    </select>
+                  </div>
+
+                  {/* Address */}
+                  <div className="md:col-span-2">
+                    <label className="block mb-1 font-medium">
+                      Address<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your Address"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+
+                  {/* City and Postcode */}
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      Town / City<span className="text-red-500">*</span>
+                    </label>
+                    <select className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300">
+                      <option>London</option>
+                      <option>Dhaka</option>
+                      <option>New York</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block mb-1 font-medium">
+                      Postcode / ZIP<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="0000"
+                      className="w-full border border-green-200 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Buttons */}
+                <div className="flex justify-center items-center gap-6 pt-2">
+                  <button
+                    type="button"
+                    className="text-red-600 font-medium hover:underline"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-all duration-300"
+                  >
+                    Update Profile
+                  </button>
+                </div>
+              </form>
+              {/* Profile Image with Edit Icon */}
+              <div className="relative w-1/3  h-[120px]">
+                <div className="flex flex-col  items-center">
+                  <p className="text-[18px] font-bold">Update Logo</p>
+                  <p className="text-[10px] text-gray-600 py-2">
+                    Size300x300. Gifs work too.Max 5mb.
+                  </p>
+                  <img
+                    src={profileImage}
+                    alt="profile"
+                    className="rounded-full w-[100px] h-[100px] object-cover border-2 border-gray-300"
+                  />
+                  <div className="absolute -bottom-[26px] right-[90px] bg-green-500 text-white rounded-full p-1 cursor-pointer">
+                    <FaEdit size={14} />
+                  </div>
+                </div>
+              </div>
+            </div>
           )}
           {activeTab === "Payment Method" && (
             <p>Manage your credit cards or payment options.</p>
