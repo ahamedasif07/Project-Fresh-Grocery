@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { FaEdit, FaHeadset, FaShoppingCart, FaTruck } from "react-icons/fa";
+import {
+  FaCcMastercard,
+  FaCcVisa,
+  FaEdit,
+  FaHeadset,
+  FaPaypal,
+  FaShoppingCart,
+  FaTruck,
+  FaUniversity,
+} from "react-icons/fa";
 import profileImage from "../../../public/assets/hero-img-2.webp";
 
 const DashboardPage = () => {
@@ -16,6 +25,32 @@ const DashboardPage = () => {
     "Change Password",
     "Support Ticket",
     "Logout",
+  ];
+  const paymentMethods = [
+    {
+      id: 1,
+      name: "Dutch Bangl Bank Lmtd",
+      masked: "********5535",
+      icon: <FaUniversity size={40} className="text-purple-600" />,
+    },
+    {
+      id: 2,
+      name: "Master Card",
+      masked: "********5535",
+      icon: <FaCcMastercard size={40} className="text-red-500" />,
+    },
+    {
+      id: 3,
+      name: "Paypal Account",
+      masked: "********5535",
+      icon: <FaPaypal size={40} className="text-blue-600" />,
+    },
+    {
+      id: 4,
+      name: "Visa Card",
+      masked: "********5535",
+      icon: <FaCcVisa size={40} className="text-blue-500" />,
+    },
   ];
 
   return (
@@ -282,7 +317,32 @@ const DashboardPage = () => {
             </div>
           )}
           {activeTab === "Payment Method" && (
-            <p>Manage your credit cards or payment options.</p>
+            <div className="bg-white p-4 md:p-8 max-w-4xl mx-auto space-y-6">
+              {paymentMethods.map((method) => (
+                <div
+                  key={method.id}
+                  className="flex items-center justify-between border-b pb-4"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center">
+                      {method.icon}
+                    </div>
+                    <div>
+                      <h2 className="text-lg font-bold">{method.name}</h2>
+                      <p className="text-sm text-gray-700">
+                        Bank {method.masked}
+                      </p>
+                      <p className="text-green-600 font-medium text-sm">
+                        Verified
+                      </p>
+                    </div>
+                  </div>
+                  <button className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-all">
+                    Manage
+                  </button>
+                </div>
+              ))}
+            </div>
           )}
           {activeTab === "Order" && (
             <p>See your past and current orders here.</p>
